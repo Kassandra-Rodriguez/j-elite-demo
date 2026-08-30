@@ -53,15 +53,16 @@ All pulled from J's Elite's own Instagram (@js.elitedetailing) + two screenshots
 
 | File on page | Source | Shows |
 |---|---|---|
-| `hero.jpg` | `car-detailed.jpg` | Silver Corvette Stingray w/ carbon hood, Franklin Mtns behind |
-| `g1-corvette-foam.jpg` | IG post | Corvette in snow foam, West El Paso driveway |
+| `hero.jpg` | `car-detailed.jpg` | Silver Corvette Stingray w/ carbon hood, Franklin Mtns behind — hero background (portrait crop) |
+| `area-elpaso.jpg` | `car-detailed.jpg` | Landscape crop of the same job — mountains, El Paso rooftops, driveway — service-area photo. Customer plate blurred. |
 | `g2-transam-foam.jpg` | `car-detailed-washing.jpg` | Pontiac Trans Am in snow foam (J's Elite plate frame visible) |
 | `g3-bmw.jpg` | IG post | Black BMW X5, gloss-restored |
 | `g4-denali.jpg` | IG post | GMC Acadia Denali, front end / chrome grille |
+| `g5-truck.jpg` | IG post | White GMC Sierra Denali HD, front end / chrome grille |
 | `g6-interior.jpg` | IG post | Clean compact-SUV front interior |
 | `ba-before.jpg` / `ba-after.jpg` | IG before/after post | Rear bench seat, split from one stacked image into two halves |
 | `logo-source.jpg` | IG avatar | Original winged-badge logo (redrawn as inline SVG in the header/footer) |
-| `g5-truck.jpg` | IG post | Spare — GMC Sierra Denali HD, not currently placed on the page |
+| `g1-corvette-foam.jpg` | IG post | Spare — Corvette in snow foam; not currently placed on the page |
 
 Originals kept: `car-detailed.jpg`, `car-detailed-washing.jpg`, `before-after.jpg`.
 
@@ -92,8 +93,8 @@ champagne-gold accent, white type, condensed display lettering).
 
 Header · hero + booking form · trust bar (we-come-to-you / interior & exterior / book by text /
 se habla español) · before/after slider · services grid · pricing (3 tiers) · how mobile
-detailing works (3 steps) · work carousel · service-area SVG map · final CTA · footer ·
-sticky mobile bar (Book / Text / Call).
+detailing works (3 steps) · work carousel · service area (area chips + a real El Paso job photo) ·
+final CTA · footer · sticky mobile bar (Book / Text / Call).
 
 The booking form asks 4 qualifying questions — service, vehicle type, when, area/ZIP — so J's
 walks into the text conversation already knowing the job. Form is **demo only**, not wired to
