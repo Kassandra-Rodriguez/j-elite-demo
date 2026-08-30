@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>J's Elite Mobile Detailing | Mobile Auto Detailing in El Paso, TX</title>
+<meta name="description" content="Interior deep cleans and full details done at your home or office anywhere in El Paso. Mobile auto detailing — we bring the elite shine to you. Book by text.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="J's Elite Mobile Detailing, home">
+      <svg class="brand-mark" viewBox="0 0 120 48" role="img" aria-hidden="true">
+        <path d="M47 24c-9-7-20-9-33-8 6 3 11 4 15 5-7 0-13 0-19 2 7 2 13 2 19 2-4 2-9 4-13 7 13 1 24-2 31-8Z" fill="currentColor" opacity=".85"/>
+        <path d="M73 24c9-7 20-9 33-8-6 3-11 4-15 5 7 0 13 0 19 2-7 2-13 2-19 2 4 2 9 4 13 7-13 1-24-2-31-8Z" fill="currentColor" opacity=".85"/>
+        <circle cx="60" cy="24" r="16.5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M50 27c.8-3.2 2.8-5 5-5l2.6-3h5.8l2.6 3c2.2 0 4.2 1.8 5 5v1.6h-2.1a2 2 0 0 1-3.9 0h-8.9a2 2 0 0 1-3.9 0H50Z" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">
+        <strong>J's Elite</strong>
+        <em data-en="Mobile Detailing" data-es="Detallado a Domicilio">Mobile Detailing</em>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="#services" data-en="Services"     data-es="Servicios">Services</a>
+      <a href="#pricing"  data-en="Pricing"      data-es="Precios">Pricing</a>
+      <a href="#work"     data-en="Our Work"     data-es="Trabajos">Our Work</a>
+      <a href="#area"     data-en="Service Area" data-es="Área de Servicio">Service Area</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar a español">
+        <span class="lang-on">EN</span><span class="lang-off">ES</span>
+      </button>
+      <a class="btn btn-call" href="sms:+19154435789">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H8l-4 4V5a1 1 0 0 1 1-1Z"/></svg>
+        <span data-en="Text to book" data-es="Reserva por texto">Text to book</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow" data-en="Mobile auto detailing · All of El Paso"
+                         data-es="Detallado automotriz a domicilio · Todo El Paso">Mobile auto detailing · All of El Paso</p>
+
+      <h1 data-en="We bring the elite shine to you."
+          data-es="Llevamos el brillo elite hasta ti.">We bring the elite shine to you.</h1>
+
+      <p class="hero-sub"
+         data-en="Interior deep cleans and full details done right in your driveway — anywhere in El Paso and the Lower Valley. Pick a day by text or grab a spot below."
+         data-es="Limpieza profunda de interiores y detallado completo en tu propia cochera — en todo El Paso y el Lower Valley. Aparta tu día por texto o abajo.">
+         Interior deep cleans and full details done right in your driveway — anywhere in El Paso and the Lower Valley. Pick a day by text or grab a spot below.</p>
+
+      <ul class="hero-points">
+        <li data-en="We come to your home or work" data-es="Vamos a tu casa o trabajo">We come to your home or work</li>
+        <li data-en="Interior, exterior &amp; full details" data-es="Interior, exterior y detallado completo">Interior, exterior &amp; full details</li>
+        <li data-en="Pay after — no deposit to book" data-es="Pagas después — sin depósito para reservar">Pay after — no deposit to book</li>
+      </ul>
+    </div>
+
+    <!-- Booking card -->
+    <div class="quote-card" id="book">
+      <div class="quote-head">
+        <h2 data-en="Book your detail" data-es="Reserva tu detallado">Book your detail</h2>
+        <p data-en="Takes about a minute. We text back a quote and a time — usually same day."
+           data-es="Toma como un minuto. Te contestamos con precio y hora — normalmente el mismo día.">Takes about a minute. We text back a quote and a time — usually same day.</p>
+      </div>
+
+      <form id="bookForm" novalidate>
+        <div class="field">
+          <label for="qName" data-en="Your name" data-es="Tu nombre">Your name</label>
+          <input id="qName" name="name" type="text" autocomplete="name" required>
+          <span class="err" data-en="Please enter your name" data-es="Por favor escribe tu nombre">Please enter your name</span>
+        </div>
+
+        <div class="field">
+          <label for="qPhone" data-en="Phone number" data-es="Número de teléfono">Phone number</label>
+          <input id="qPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(915) 000-0000" required>
+          <span class="err" data-en="Please enter a valid phone number" data-es="Escribe un número de teléfono válido">Please enter a valid phone number</span>
+        </div>
+
+        <div class="field">
+          <label for="qService" data-en="What do you want done?" data-es="¿Qué quieres que hagamos?">What do you want done?</label>
+          <select id="qService" name="service" required>
+            <option value="" data-en="Select one…" data-es="Selecciona una…">Select one…</option>
+            <option value="interior" data-en="Interior deep clean"        data-es="Limpieza profunda de interior">Interior deep clean</option>
+            <option value="exterior" data-en="Exterior wash &amp; wax"    data-es="Lavado y encerado exterior">Exterior wash &amp; wax</option>
+            <option value="full"     data-en="Full detail (inside &amp; out)" data-es="Detallado completo (interior y exterior)">Full detail (inside &amp; out)</option>
+            <option value="ceramic"  data-en="Wash, clay &amp; seal / ceramic" data-es="Lavado, clay y sellado / cerámico">Wash, clay &amp; seal / ceramic</option>
+            <option value="unsure"   data-en="Not sure — need a recommendation" data-es="No estoy seguro — necesito recomendación">Not sure — need a recommendation</option>
+          </select>
+          <span class="err" data-en="Please choose an option" data-es="Elige una opción">Please choose an option</span>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="qVehicle" data-en="Vehicle type" data-es="Tipo de vehículo">Vehicle type</label>
+            <select id="qVehicle" name="vehicle" required>
+              <option value="" data-en="Select…" data-es="Selecciona…">Select…</option>
+              <option value="sedan" data-en="Car / sedan"    data-es="Carro / sedán">Car / sedan</option>
+              <option value="coupe" data-en="Coupe / sports"  data-es="Coupé / deportivo">Coupe / sports</option>
+              <option value="suv"   data-en="SUV / crossover" data-es="SUV / camioneta">SUV / crossover</option>
+              <option value="truck" data-en="Truck"           data-es="Troca / pickup">Truck</option>
+              <option value="van"   data-en="Van / 3rd row"   data-es="Van / 3ra fila">Van / 3rd row</option>
+            </select>
+            <span class="err" data-en="Please choose an option" data-es="Elige una opción">Please choose an option</span>
+          </div>
+          <div class="field">
+            <label for="qWhen" data-en="When?" data-es="¿Cuándo?">When?</label>
+            <select id="qWhen" name="when">
+              <option value=""        data-en="Select…"        data-es="Selecciona…">Select…</option>
+              <option value="thisweek" data-en="This week"      data-es="Esta semana">This week</option>
+              <option value="weekend"  data-en="This weekend"   data-es="Este fin de semana">This weekend</option>
+              <option value="nextweek" data-en="Next week"      data-es="La próxima semana">Next week</option>
+              <option value="flexible" data-en="I'm flexible"   data-es="Soy flexible">I'm flexible</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="qArea" data-en="Where are you? (area or ZIP)" data-es="¿Dónde estás? (zona o código postal)">Where are you? (area or ZIP)</label>
+          <input id="qArea" name="area" type="text" autocomplete="postal-code" placeholder="West Side, East, 79936…">
+        </div>
+
+        <div class="field field-inline">
+          <input id="qSpanish" name="spanish" type="checkbox">
+          <label for="qSpanish" data-en="Contact me in Spanish" data-es="Contáctenme en español">Contact me in Spanish</label>
+        </div>
+
+        <button class="btn btn-primary btn-block" type="submit"
+                data-en="Request my booking" data-es="Solicitar mi reservación">Request my booking</button>
+
+        <p class="form-foot">
+          <span data-en="Or text us:" data-es="O envíanos un texto:">Or text us:</span>
+          <a href="sms:+19154435789">(915) 443-5789</a>
+        </p>
+      </form>
+
+      <div class="quote-success" id="bookSuccess" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+        <h3 data-en="Got it — we'll text you back." data-es="Listo — te contestamos por texto.">Got it — we'll text you back.</h3>
+        <p data-en="Usually same day with a quote and open times. For a faster answer, text (915) 443-5789."
+           data-es="Normalmente el mismo día con un precio y horarios. Para una respuesta más rápida, envía un texto al (915) 443-5789.">Usually same day with a quote and open times. For a faster answer, text (915) 443-5789.</p>
+        <p class="demo-note" data-en="Demo only — this form is not connected to text or email yet."
+                             data-es="Solo demostración — este formulario aún no está conectado a texto o correo.">Demo only — this form is not connected to text or email yet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ══ -->
+<section class="trustbar" aria-label="What you get">
+  <div class="wrap trust-grid">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h11l2-6h4a2 2 0 0 1 2 2v4M3 13v4h2M14 17h5M6 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm11 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg>
+      <p><strong data-en="We Come To You" data-es="Vamos Hasta Ti">We Come To You</strong>
+         <span data-en="Mobile service across El Paso" data-es="Servicio a domicilio en todo El Paso">Mobile service across El Paso</span></p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 0 1 18 0M3 12a9 9 0 0 0 18 0M3 12h18M12 3v18"/></svg>
+      <p><strong data-en="Interior &amp; Exterior" data-es="Interior y Exterior">Interior &amp; Exterior</strong>
+         <span data-en="Deep cleans, wash &amp; wax, full details" data-es="Limpieza profunda, lavado y detallado completo">Deep cleans, wash &amp; wax, full details</span></p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H8l-4 4V5a1 1 0 0 1 1-1ZM8 9h8M8 13h5"/></svg>
+      <p><strong data-en="Book By Text" data-es="Reserva Por Texto">Book By Text</strong>
+         <span data-en="No back-and-forth — just pick a day" data-es="Sin tanta vuelta — solo escoge un día">No back-and-forth — just pick a day</span></p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+      <p><strong data-en="Se Habla Español" data-es="Se Habla Español">Se Habla Español</strong>
+         <span data-en="Bilingual, El Paso owned" data-es="Bilingüe, de El Paso">Bilingual, El Paso owned</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BEFORE / AFTER SLIDER ══ -->
+<section class="section section-alt" id="transformation">
+  <div class="wrap">
+    <div class="section-head section-head-center">
+      <span class="rule" aria-hidden="true"></span>
+      <p class="eyebrow" data-en="Before &amp; after" data-es="Antes y después">Before &amp; after</p>
+      <h2 data-en="Same seat. Same afternoon." data-es="El mismo asiento. La misma tarde.">Same seat. Same afternoon.</h2>
+      <p class="section-sub"
+         data-en="Drag the slider. A real J's Elite interior detail on a daily-driver back seat — spills, stains and ground-in dirt pulled out on-site."
+         data-es="Desliza el control. Un detallado de interior real de J's Elite en el asiento trasero de un carro de diario — derrames, manchas y mugre incrustada, sacados en el lugar.">
+         Drag the slider. A real J's Elite interior detail on a daily-driver back seat — spills, stains and ground-in dirt pulled out on-site.</p>
+    </div>
+
+    <div class="ba" id="ba">
+      <img class="ba-img ba-after" src="assets/ba-after.jpg" width="716" height="680"
+           alt="Rear bench seat after a J's Elite interior detail: leather wiped down, carpet vacuumed, floor mat clean">
+      <img class="ba-img ba-before" src="assets/ba-before.jpg" width="716" height="680"
+           alt="Same rear bench seat before: trash, toys, spilled powder and stains across the leather and floor">
+      <div class="ba-divider" id="baDivider" aria-hidden="true">
+        <span class="ba-knob">
+          <svg viewBox="0 0 24 24"><path d="M9 6 4 12l5 6M15 6l5 6-5 6"/></svg>
+        </span>
+      </div>
+      <input type="range" class="ba-range" id="baRange" min="0" max="100" value="50"
+             aria-label="Drag to compare before and after">
+    </div>
+
+    <div class="cta-row cta-row-center">
+      <a class="btn btn-primary" href="#book" data-en="Book my detail" data-es="Reservar mi detallado">Book my detail</a>
+      <a class="btn btn-ghost" href="tel:+19154435789" data-en="Call (915) 443-5789" data-es="Llama al (915) 443-5789">Call (915) 443-5789</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="rule" aria-hidden="true"></span>
+      <p class="eyebrow" data-en="What we do" data-es="Lo que hacemos">What we do</p>
+      <h2 data-en="One crew, inside and out" data-es="Un equipo, por dentro y por fuera">One crew, inside and out</h2>
+    </div>
+
+    <ul class="svc-grid">
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15h16M6 15l1.4-4.2A2 2 0 0 1 9.3 9.5h5.4a2 2 0 0 1 1.9 1.3L18 15M7 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm10 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg>
+        <h3 data-en="Exterior wash &amp; wax" data-es="Lavado y encerado exterior">Exterior wash &amp; wax</h3>
+      </li>
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c1-5 3-8 8-8s7 3 8 8M8 12V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"/></svg>
+        <h3 data-en="Interior deep clean" data-es="Limpieza profunda de interior">Interior deep clean</h3>
+      </li>
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.9 7.2 18.4l.9-5.4L4.2 8.7l5.4-.8L12 3Z"/></svg>
+        <h3 data-en="Full detail (in &amp; out)" data-es="Detallado completo (interior y exterior)">Full detail (in &amp; out)</h3>
+      </li>
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 4 6 10a6 6 0 0 1-12 0c0-6 6-10 6-10ZM9 14a3 3 0 0 0 3 3"/></svg>
+        <h3 data-en="Wash · clay · seal" data-es="Lavado · clay · sellado">Wash · clay · seal</h3>
+      </li>
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7c3-2 11-2 14 0M4 11c4-3 12-3 16 0M6 15c3-2 9-2 12 0M9 19c1.5-1 4.5-1 6 0"/></svg>
+        <h3 data-en="Pet hair &amp; stain removal" data-es="Pelo de mascota y manchas">Pet hair &amp; stain removal</h3>
+      </li>
+      <li class="svc">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h5a5 5 0 0 1 0 10H8V6ZM3 9h3M3 12h3M3 15h3"/></svg>
+        <h3 data-en="Headlight restoration" data-es="Restauración de faros">Headlight restoration</h3>
+      </li>
+    </ul>
+    <p class="svc-note" data-en="Every job is done at your place — we bring our own water and power."
+                        data-es="Cada trabajo se hace en tu domicilio — llevamos nuestra propia agua y electricidad.">Every job is done at your place — we bring our own water and power.</p>
+  </div>
+</section>
+
+<!-- ══ PRICING ══ -->
+<section class="section section-alt" id="pricing">
+  <div class="wrap">
+    <div class="section-head section-head-center">
+      <span class="rule" aria-hidden="true"></span>
+      <p class="eyebrow" data-en="Pricing" data-es="Precios">Pricing</p>
+      <h2 data-en="Straight pricing, no surprises" data-es="Precios claros, sin sorpresas">Straight pricing, no surprises</h2>
+      <p class="section-sub"
+         data-en="Starting prices below. Final price depends on your vehicle's size and condition — you get the exact number before we book."
+         data-es="Precios de inicio abajo. El precio final depende del tamaño y la condición de tu vehículo — recibes el número exacto antes de reservar.">
+         Starting prices below. Final price depends on your vehicle's size and condition — you get the exact number before we book.</p>
+    </div>
+
+    <ul class="price-grid">
+      <li class="price">
+        <p class="price-name" data-en="Interior detail" data-es="Detallado de interior">Interior detail</p>
+        <p class="price-fig"><span class="price-from" data-en="from" data-es="desde">from</span>$149</p>
+        <p class="price-desc" data-en="Full vacuum, seats &amp; carpet shampoo, wipe-down, windows, plastics dressed."
+                              data-es="Aspirado completo, shampoo de asientos y alfombra, limpieza a fondo, vidrios y plásticos.">Full vacuum, seats &amp; carpet shampoo, wipe-down, windows, plastics dressed.</p>
+        <a class="btn btn-ghost btn-block" href="#book" data-en="Book interior" data-es="Reservar interior">Book interior</a>
+      </li>
+      <li class="price price-feature">
+        <span class="price-tag" data-en="Most booked" data-es="Más reservado">Most booked</span>
+        <p class="price-name" data-en="Full detail — in &amp; out" data-es="Detallado completo — interior y exterior">Full detail — in &amp; out</p>
+        <p class="price-fig"><span class="price-from" data-en="from" data-es="desde">from</span>$199</p>
+        <p class="price-desc" data-en="Everything in the interior detail plus hand wash, wheels, tires, and wax."
+                              data-es="Todo lo del detallado de interior más lavado a mano, rines, llantas y cera.">Everything in the interior detail plus hand wash, wheels, tires, and wax.</p>
+        <a class="btn btn-primary btn-block" href="#book" data-en="Book full detail" data-es="Reservar completo">Book full detail</a>
+      </li>
+      <li class="price">
+        <p class="price-name" data-en="Custom / ceramic" data-es="Personalizado / cerámico">Custom / ceramic</p>
+        <p class="price-fig price-fig-quote" data-en="Quote" data-es="Cotización">Quote</p>
+        <p class="price-desc" data-en="Wash, clay &amp; seal, paint decon, ceramic protection, or heavy restoration jobs."
+                              data-es="Lavado, clay y sellado, descontaminación, protección cerámica o trabajos de restauración pesada.">Wash, clay &amp; seal, paint decon, ceramic protection, or heavy restoration jobs.</p>
+        <a class="btn btn-ghost btn-block" href="#book" data-en="Request a quote" data-es="Pedir cotización">Request a quote</a>
+      </li>
+    </ul>
+    <p class="price-disclaimer"
+       data-en="Starting prices reflect J's Elite's current promotions and can change. Trucks, SUVs, vans and heavily soiled vehicles are priced higher. Confirmed at booking — not a fixed offer."
+       data-es="Los precios de inicio reflejan las promociones actuales de J's Elite y pueden cambiar. Trocas, SUVs, vans y vehículos muy sucios tienen un precio mayor. Se confirma al reservar — no es una oferta fija.">
+       Starting prices reflect J's Elite's current promotions and can change. Trucks, SUVs, vans and heavily soiled vehicles are priced higher. Confirmed at booking — not a fixed offer.</p>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section class="section section-dark" id="how">
+  <div class="wrap">
+    <div class="section-head section-head-center section-head-light">
+      <span class="rule" aria-hidden="true"></span>
+      <p class="eyebrow" data-en="How mobile detailing works" data-es="Cómo funciona el detallado a domicilio">How mobile detailing works</p>
+      <h2 data-en="You don't go anywhere" data-es="Tú no vas a ningún lado">You don't go anywhere</h2>
+    </div>
+
+    <ol class="steps">
+      <li class="step">
+        <span class="step-n">01</span>
+        <h3 data-en="Text or book" data-es="Escribe o reserva">Text or book</h3>
+        <p data-en="Send your vehicle type and a photo. We text back a quote and open times."
+           data-es="Manda el tipo de vehículo y una foto. Te contestamos con precio y horarios.">Send your vehicle type and a photo. We text back a quote and open times.</p>
+      </li>
+      <li class="step">
+        <span class="step-n">02</span>
+        <h3 data-en="We roll up" data-es="Llegamos nosotros">We roll up</h3>
+        <p data-en="We come to your home or job with our own water and power. You keep doing your day."
+           data-es="Llegamos a tu casa o trabajo con nuestra propia agua y electricidad. Tú sigues con tu día.">We come to your home or job with our own water and power. You keep doing your day.</p>
+      </li>
+      <li class="step">
+        <span class="step-n">03</span>
+        <h3 data-en="Drive it clean" data-es="Manéjalo limpio">Drive it clean</h3>
+        <p data-en="Inside and out, showroom fresh. Pay after — card, cash or transfer."
+           data-es="Por dentro y por fuera, como de agencia. Pagas después — tarjeta, efectivo o transferencia.">Inside and out, showroom fresh. Pay after — card, cash or transfer.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ══ WORK GALLERY ══ -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="rule" aria-hidden="true"></span>
+      <p class="eyebrow" data-en="Recent work" data-es="Trabajos recientes">Recent work</p>
+      <h2 data-en="Rides detailed around El Paso" data-es="Carros detallados por todo El Paso">Rides detailed around El Paso</h2>
+    </div>
+    <div class="carousel" id="workCarousel" aria-roledescription="carousel" aria-label="Recent J's Elite details">
+      <div class="carousel-viewport" id="carouselViewport">
+        <ul class="carousel-track" id="carouselTrack">
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/hero.jpg" width="1400" height="1600"
+                 alt="Silver Corvette Stingray with a carbon-fiber hood, freshly detailed, Franklin Mountains behind it">
+            <span class="slide-cap" data-en="Carbon-hood Stingray · full exterior detail" data-es="Stingray con cofre de carbono · detallado exterior completo">Carbon-hood Stingray · full exterior detail</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g1-corvette-foam.jpg" width="1300" height="1500" loading="lazy"
+                 alt="Silver Corvette covered in thick snow foam during a wash on a West El Paso driveway">
+            <span class="slide-cap" data-en="Corvette · foam bath, West Side" data-es="Corvette · baño de espuma, West Side">Corvette · foam bath, West Side</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g2-transam-foam.jpg" width="1300" height="1733" loading="lazy" style="object-position:center 38%"
+                 alt="Silver Pontiac Trans Am covered in snow foam during a hand wash">
+            <span class="slide-cap" data-en="Trans Am · hand wash &amp; decon" data-es="Trans Am · lavado a mano y descontaminación">Trans Am · hand wash &amp; decon</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g3-bmw.jpg" width="789" height="1400" loading="lazy"
+                 alt="Black BMW X5 with a deep-gloss finish after a full exterior detail">
+            <span class="slide-cap" data-en="BMW X5 · gloss-restored exterior" data-es="BMW X5 · exterior con brillo restaurado">BMW X5 · gloss-restored exterior</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g4-denali.jpg" width="787" height="1400" loading="lazy"
+                 alt="Grey GMC Acadia Denali, front end clean and chrome grille polished">
+            <span class="slide-cap" data-en="GMC Acadia Denali · full detail" data-es="GMC Acadia Denali · detallado completo">GMC Acadia Denali · full detail</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/g6-interior.jpg" width="1050" height="1400" loading="lazy" style="object-position:center 60%"
+                 alt="Clean front interior of a compact SUV after a J's Elite interior detail">
+            <span class="slide-cap" data-en="Daily driver · interior deep clean" data-es="Carro de diario · limpieza profunda de interior">Daily driver · interior deep clean</span>
+          </li>
+        </ul>
+      </div>
+
+      <button class="carousel-btn carousel-prev" type="button" aria-label="Previous photo" aria-controls="carouselTrack">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+      </button>
+      <button class="carousel-btn carousel-next" type="button" aria-label="Next photo" aria-controls="carouselTrack">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Choose a photo"></div>
+    </div>
+    <p class="gallery-note" data-en="Photos from recent J's Elite jobs (@js.elitedetailing)."
+                            data-es="Fotos de trabajos recientes de J's Elite (@js.elitedetailing).">Photos from recent J's Elite jobs (@js.elitedetailing).</p>
+  </div>
+</section>
+
+<!-- ══ SERVICE AREA ══ -->
+<section class="section section-alt" id="area">
+  <div class="wrap area-grid">
+    <div>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="eyebrow" data-en="Service area" data-es="Área de servicio">Service area</p>
+      <h2 data-en="All of El Paso &amp; the Lower Valley" data-es="Todo El Paso y el Lower Valley">All of El Paso &amp; the Lower Valley</h2>
+      <ul class="area-list">
+        <li>El Paso</li><li>West Side</li><li>Central</li><li>Northeast</li>
+        <li>East Side</li><li>Lower Valley</li><li>Socorro</li><li>Horizon City</li>
+        <li>Clint</li><li>Canutillo</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#book" data-en="Check my address" data-es="Verificar mi dirección">Check my address</a>
+      </div>
+    </div>
+    <div class="map-card">
+      <svg viewBox="0 0 460 380" class="map-svg" role="img"
+           aria-label="Service-area map: greater El Paso and the Lower Valley, with the Franklin Mountains, the Rio Grande and Interstate 10.">
+        <defs>
+          <g id="jePin">
+            <path d="M0 0 L-6 -12 A6.5 6.5 0 1 1 6 -12 Z" fill="#C9A24B"/>
+            <circle cx="0" cy="-13" r="2.6" fill="#12100B"/>
+          </g>
+        </defs>
+
+        <rect width="460" height="380" rx="16" fill="#17161A"/>
+
+        <!-- Rio Grande -->
+        <path d="M64 44 C 128 96, 158 128, 176 176 C 196 228, 258 256, 326 276 C 376 292, 406 322, 432 352"
+              fill="none" stroke="#3B4A57" stroke-width="7" stroke-linecap="round" opacity=".7"/>
+
+        <!-- I-10 -->
+        <path d="M40 96 C 116 112, 156 152, 208 184 C 272 224, 344 224, 428 214"
+              fill="none" stroke="#4A4A4A" stroke-width="4" stroke-linecap="round" stroke-dasharray="1.5 9"/>
+        <text x="44" y="90" font-size="10" font-weight="700" fill="#7A7A7A" letter-spacing=".5">I-10</text>
+
+        <!-- coverage area -->
+        <path d="M116 74 C 198 40, 306 54, 356 112 C 408 172, 416 258, 362 308 C 300 366, 184 360, 134 306 C 88 256, 84 156, 116 74 Z"
+              fill="#C9A24B" opacity=".10"/>
+        <path d="M116 74 C 198 40, 306 54, 356 112 C 408 172, 416 258, 362 308 C 300 366, 184 360, 134 306 C 88 256, 84 156, 116 74 Z"
+              fill="none" stroke="#C9A24B" stroke-width="1.5" stroke-dasharray="4 6" opacity=".5"/>
+
+        <!-- Franklin Mountains -->
+        <path d="M162 56 l16 44 l11 -20 l17 50 l13 -24 l15 66 l-76 5 Z" fill="#2A2924" opacity=".9"/>
+        <path d="M162 56 l16 44 l11 -20 l17 50 l13 -24 l15 66" fill="none" stroke="#41403A" stroke-width="1.5" stroke-linejoin="round"/>
+        <text x="150" y="164" font-size="8.5" font-weight="700" fill="#6E6A5E" letter-spacing="1" transform="rotate(-90 150 164)">FRANKLIN MTS</text>
+
+        <!-- pins -->
+        <use href="#jePin" x="140" y="170"/><text x="130" y="166" text-anchor="end" font-size="11" font-weight="600" fill="#B9B4A6">West Side</text>
+        <use href="#jePin" x="234" y="110"/><text x="234" y="92" text-anchor="middle" font-size="11" font-weight="600" fill="#B9B4A6">Northeast</text>
+        <use href="#jePin" x="92" y="98"/><text x="92" y="70" text-anchor="middle" font-size="11" font-weight="600" fill="#B9B4A6">Canutillo</text>
+        <use href="#jePin" x="326" y="200"/><text x="334" y="203" font-size="11" font-weight="600" fill="#B9B4A6">East Side</text>
+        <use href="#jePin" x="378" y="286"/><text x="370" y="303" text-anchor="end" font-size="11" font-weight="600" fill="#B9B4A6">Horizon City</text>
+        <use href="#jePin" x="272" y="312"/><text x="272" y="330" text-anchor="middle" font-size="11" font-weight="600" fill="#B9B4A6">Lower Valley</text>
+
+        <!-- El Paso anchor -->
+        <g transform="translate(206 250)">
+          <path d="M0 0 L-9 -18 A10 10 0 1 1 9 -18 Z" fill="#E8CE8F"/>
+          <path d="M0 -22 l2.5 5.1 5.6.8 -4 3.9 1 5.6 -5.1 -2.7 -5.1 2.7 1 -5.6 -4 -3.9 5.6 -.8 Z" fill="#12100B"/>
+        </g>
+        <text x="206" y="272" text-anchor="middle" font-size="13" font-weight="700" fill="#F1E9D6" letter-spacing=".5">EL PASO</text>
+
+        <text x="30" y="360" font-size="10" font-weight="600" fill="#7A7A7A">Mobile crew — we drive to you</text>
+      </svg>
+      <p class="map-cap" data-en="One mobile crew covering the whole city. We bring everything needed to detail on-site."
+                         data-es="Un equipo móvil que cubre toda la ciudad. Llevamos todo lo necesario para detallar en el lugar.">One mobile crew covering the whole city. We bring everything needed to detail on-site.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ══ -->
+<section class="finalcta">
+  <div class="wrap finalcta-inner">
+    <h2 data-en="Text us a photo of your ride."
+        data-es="Mándanos una foto de tu carro.">Text us a photo of your ride.</h2>
+    <p data-en="Free quote back, usually the same day. Then we come to you."
+       data-es="Te regresamos una cotización, normalmente el mismo día. Luego vamos hasta ti.">Free quote back, usually the same day. Then we come to you.</p>
+    <div class="cta-row cta-row-center">
+      <a class="btn btn-primary btn-lg" href="#book" data-en="Request my booking" data-es="Solicitar mi reservación">Request my booking</a>
+      <a class="btn btn-ghost btn-lg" href="sms:+19154435789" data-en="Text (915) 443-5789" data-es="Texto al (915) 443-5789">Text (915) 443-5789</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand brand-footer">
+        <svg class="brand-mark" viewBox="0 0 120 48" role="img" aria-hidden="true">
+          <path d="M47 24c-9-7-20-9-33-8 6 3 11 4 15 5-7 0-13 0-19 2 7 2 13 2 19 2-4 2-9 4-13 7 13 1 24-2 31-8Z" fill="currentColor" opacity=".85"/>
+          <path d="M73 24c9-7 20-9 33-8-6 3-11 4-15 5 7 0 13 0 19 2-7 2-13 2-19 2 4 2 9 4 13 7-13 1-24-2-31-8Z" fill="currentColor" opacity=".85"/>
+          <circle cx="60" cy="24" r="16.5" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M50 27c.8-3.2 2.8-5 5-5l2.6-3h5.8l2.6 3c2.2 0 4.2 1.8 5 5v1.6h-2.1a2 2 0 0 1-3.9 0h-8.9a2 2 0 0 1-3.9 0H50Z" fill="currentColor"/>
+        </svg>
+        <span class="brand-text"><strong>J's Elite</strong><em>Mobile Detailing</em></span>
+      </div>
+      <p class="foot-note">
+        <span data-en="Mobile auto detailing · El Paso, TX" data-es="Detallado automotriz a domicilio · El Paso, TX">Mobile auto detailing · El Paso, TX</span><br>
+        <span data-en="We bring the elite shine to you." data-es="Llevamos el brillo elite hasta ti.">We bring the elite shine to you.</span>
+      </p>
+    </div>
+
+    <div>
+      <h4 data-en="Book" data-es="Reservar">Book</h4>
+      <p>
+        <a href="sms:+19154435789" data-en="Text (915) 443-5789" data-es="Texto (915) 443-5789">Text (915) 443-5789</a><br>
+        <a href="tel:+19154435789" data-en="Call (915) 443-5789" data-es="Llama (915) 443-5789">Call (915) 443-5789</a><br>
+        <a href="#book" data-en="Booking form" data-es="Formulario de reserva">Booking form</a>
+      </p>
+    </div>
+
+    <div>
+      <h4 data-en="See more" data-es="Ver más">See more</h4>
+      <p>
+        <a href="https://www.instagram.com/js.elitedetailing/" target="_blank" rel="noopener">Instagram @js.elitedetailing</a><br>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      </p>
+    </div>
+
+    <div>
+      <h4 data-en="Hours" data-es="Horario">Hours</h4>
+      <p><span data-en="7 days · by appointment" data-es="7 días · con cita">7 days · by appointment</span><br>
+         <span data-en="Text anytime" data-es="Escribe a cualquier hora">Text anytime</span><br>
+         <span class="demo-inline" data-en="(confirm hours)" data-es="(confirmar horario)">(confirm hours)</span></p>
+    </div>
+  </div>
+
+  <div class="wrap footer-base">
+    <p>© <span id="yr">2026</span> J's Elite Mobile Detailing · El Paso, TX</p>
+    <p class="spec-note" data-en="Concept site prepared for J's Elite Mobile Detailing — not an official page."
+                         data-es="Sitio conceptual preparado para J's Elite Mobile Detailing — no es una página oficial.">Concept site prepared for J's Elite Mobile Detailing — not an official page.</p>
+  </div>
+</footer>
+
+<!-- ══ STICKY MOBILE BAR ══ -->
+<div class="mobile-bar">
+  <a class="btn btn-ghost mb-btn" href="#book" data-en="Book" data-es="Reservar">Book</a>
+  <a class="btn btn-ghost mb-btn" href="sms:+19154435789" data-en="Text" data-es="Texto">Text</a>
+  <a class="btn btn-primary mb-btn" href="tel:+19154435789">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2Z"/></svg>
+    <span data-en="Call" data-es="Llamar">Call</span>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
